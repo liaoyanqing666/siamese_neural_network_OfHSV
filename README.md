@@ -26,7 +26,7 @@ Additionally, a web page has been created in this project. After running app.py,
 
 ### How to use it
 
-1. download CEFAR dataset
+1. download CEFAR dataset from http://www.cedar.buffalo.edu/NIJ/data/signatures.rar
 2. run preprocess.py to label which pairs of images will be used
 3. run train.py to train it
 4. run ROC.py to judge it
