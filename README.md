@@ -11,6 +11,7 @@
 
 本项目还写了个网页，运行app.py后可以直接在网页上传两张签名照片，判断是否为同一个人的签名
 
+**注意：由于签名图像的差别很小，因此可能要很长时间训练才能看出效果**
 
 ### English translation:
 
@@ -22,6 +23,8 @@ This project can achieve WI-type OfHSV signature identification
 This project provides a simple code of VGG16+Siamese neural network, implemented using PyTorch.
 
 Additionally, a web page has been created in this project. After running app.py, users can directly upload two signature photos on the webpage to determine whether they belong to the same person.
+
+** Attention: Because the difference in the signature images is small, it may take a long time to train to see the effect **
 
 
 ### How to use it
