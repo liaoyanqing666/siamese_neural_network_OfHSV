@@ -22,3 +22,11 @@ This project can achieve WI-type OfHSV signature identification
 This project provides a simple code of VGG16+Siamese neural network, implemented using PyTorch.
 
 Additionally, a web page has been created in this project. After running app.py, users can directly upload two signature photos on the webpage to determine whether they belong to the same person.
+
+
+### How to use it
+
+1. download CEFAR dataset
+2. run preprocess.py to label which pairs of images will be used
+3. run train.py to train it
+4. run ROC.py to judge it
