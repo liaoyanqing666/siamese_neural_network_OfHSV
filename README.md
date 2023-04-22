@@ -24,7 +24,7 @@ This project provides a simple code of VGG16+Siamese neural network, implemented
 
 Additionally, a web page has been created in this project. After running app.py, users can directly upload two signature photos on the webpage to determine whether they belong to the same person.
 
-** Attention: Because the difference in the signature images is small, it may take a long time to train to see the effect **
+**Attention: Because the difference in the signature images is small, it may take a long time to train to see the effect**
 
 
 ### How to use it
