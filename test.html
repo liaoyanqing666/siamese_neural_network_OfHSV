@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+	<title>签名鉴别系统</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+        h1 {
+            text-align: center;
+            color: #333333;
+            margin-top: 40px;
+        }
+
+        form {
+
+            margin: 40px auto;
+            max-width: 400px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+			text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .image-container {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+        }
+
+        .image-container img {
+
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 10px;
+        }
+
+        .result-container {
+            max-width: 400px;
+            margin-top: 40px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+	<h1>签名鉴别系统</h1>
+	<form action="/" method="POST" enctype="multipart/form-data">
+      上传签名<br/><br/>
+		<label for="image1">Image 1:</label>
+		<input type="file" name="image1" id="image1" ><br>
+		<label for="image2">Image 2:</label>
+		<input type="file" name="image2" id="image2" value="选择图片"><br>
+		<input type="submit" value="Upload Images">
+	</form>
+	<div class="image-container">
+		<img id="uploaded-image1" height="224" width="224">
+		<img id="uploaded-image2" height="224" width="224">
+	</div>
+	<div class="result-container">
+        answer:
+		{% if result %}
+			{{ result }}
+		{% endif %}
+	</div>
+	<script>
+		var input1 = document.getElementById('image1');
+		var input2 = document.getElementById('image2');
+		var img1 = document.getElementById('uploaded-image1');
+		var img2 = document.getElementById('uploaded-image2');
+      	input1.addEventListener('change', function(e) {
+			img1.src = URL.createObjectURL(e.target.files[0]);
+        });
+
+        input2.addEventListener('change', function(e) {
+            img2.src = URL.createObjectURL(e.target.files[0]);
+        });
+    </script>
+</body>
+</html>
