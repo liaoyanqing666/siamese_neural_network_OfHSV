@@ -11,7 +11,9 @@
 
 本项目还写了个网页，运行app.py后可以直接在网页上传两张签名照片，判断是否为同一个人的签名
 
-**注意：由于签名图像的差别很小，因此可能要很长时间训练才能看出效果**
+更新：上传了数据集(CEDAR.tar.001-CEDAR.tar.011)，使用7zip解压即可。
+
+**注意：由于签名图像的差别很小，因此可能要很长时间训练才能看出效果。数据中真实数据和虚假数据底色不一样需要预处理**
 
 ### English translation:
 
@@ -24,12 +26,14 @@ This project provides a simple code of VGG16+Siamese neural network, implemented
 
 Additionally, a web page has been created in this project. After running app.py, users can directly upload two signature photos on the webpage to determine whether they belong to the same person.
 
-**Attention: Because the difference in the signature images is small, it may take a long time to train to see the effect**
+Update: The data set (CEDAR.tar.001-CEDAR.tar.011) was uploaded and unzipped using 7zip.
+
+**Attention: Because the difference in the signature images is small, it may take a long time to train to see the effect. In the data, the background color of real data and false data is different and needs to be preprocessed**
 
 
 ### How to use it
 
-1. download CEFAR dataset from http://www.cedar.buffalo.edu/NIJ/data/signatures.rar
+1. download CEDAR dataset
 2. run preprocess.py to label which pairs of images will be used
 3. run train.py to train it
 4. run ROC.py to judge it
