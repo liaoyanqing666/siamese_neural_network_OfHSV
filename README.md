@@ -37,3 +37,5 @@ Update: The data set (CEDAR.tar.001-CEDAR.tar.011) was uploaded and unzipped usi
 2. run preprocess.py to label which pairs of images will be used
 3. run train.py to train it
 4. run ROC.py to judge it
+
+Personal e-mail: 1793706453@qq.com
